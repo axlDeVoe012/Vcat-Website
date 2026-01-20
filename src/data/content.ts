@@ -2,7 +2,6 @@ import {
   Building2, 
   HardHat, 
   Truck, 
-  CheckCircle2, 
   ShieldCheck, 
   Wrench, 
   Utensils

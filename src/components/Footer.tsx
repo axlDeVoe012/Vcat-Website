@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { COMPANY_INFO } from '../data/content';
 import { Phone, Mail, MapPin } from 'lucide-react';

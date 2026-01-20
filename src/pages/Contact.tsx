@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { COMPANY_INFO } from '../data/content';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
 const Contact = () => {
   return (

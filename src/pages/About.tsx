@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { COMPANY_INFO } from '../data/content';
 import { Target, Eye, Users } from 'lucide-react';
 

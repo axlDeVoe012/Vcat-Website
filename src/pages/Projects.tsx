@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { PROJECTS_DATA } from '../data/content';
 import { ArrowUpRight } from 'lucide-react';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { SERVICES_DATA } from '../data/content';
 
 const Services = () => {
