@@ -152,7 +152,7 @@ const Projects = () => {
             <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
             <p className="text-gray-400 text-sm">{selectedProject.description}</p>
             <div className="mt-6 flex justify-center gap-2">
-              {selectedProject.images?.map((img: string, i: number) => (
+              {selectedProject.images?.map((_: string, i: number) => (
                 <div
                   key={i}
                   className={`h-1.5 rounded-full transition-all ${i === currentImgIndex
