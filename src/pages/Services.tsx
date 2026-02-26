@@ -36,7 +36,7 @@ const Services = () => {
                 <ul className="space-y-2 md:space-y-3">
                   {category.items.map((item, idx) => (
                     <li key={idx} className="flex items-start text-gray-600 text-sm">
-                      <span className="w-1.5 h-1.5 bg-brand-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span className="w-1.5 h-1.5 bg-brand-blue rounded-full mt-2 mr-3 shrink-0"></span>
                       <span className="leading-relaxed">{item}</span>
                     </li>
                   ))}
