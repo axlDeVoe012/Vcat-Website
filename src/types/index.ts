@@ -25,5 +25,7 @@ export interface Project {
   category: string;
   description: string;
   // In a real app, you would have an actual image path here
-  imagePlaceholderColor?: string; 
+  imagePlaceholderColor?: string;
+  images: string[];
+
 }

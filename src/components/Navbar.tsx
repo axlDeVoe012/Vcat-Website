@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, ChevronRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data/content';
+import Logo from '../assets/logo.webp';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,16 +31,16 @@ const Navbar = () => {
       <div className="bg-brand-blue text-white py-2 hidden md:block border-b border-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs tracking-wide font-medium">
           <div className="flex items-center space-x-6">
-            <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-gray-200 transition">
+            <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 text-blue-400 hover:text-gray-200 transition">
               <Phone size={14} className="text-brand-red" /> 
               {COMPANY_INFO.phone}
             </a>
-            <a href={`mailto:${COMPANY_INFO.email}`} className="flex items-center gap-2 hover:text-gray-200 transition">
+            <a href={`mailto:${COMPANY_INFO.email}`} className="flex items-center gap-2 text-blue-400 hover:text-gray-200 transition">
               <Mail size={14} className="text-brand-red" /> 
               {COMPANY_INFO.email}
             </a>
           </div>
-          <div className="flex items-center gap-4 text-blue-200">
+          <div className="flex items-center gap-4 text-blue-300">
             <span>Reg: {COMPANY_INFO.regNo}</span>
             <span className="opacity-30">|</span>
             <span>Pretoria, South Africa</span>
@@ -55,7 +56,11 @@ const Navbar = () => {
             {/* LOGO AREA */}
             <Link to="/" className="flex items-center gap-3 group" onClick={() => setIsOpen(false)}>
               <div className="relative w-12 h-12 bg-brand-blue rounded-lg overflow-hidden flex items-center justify-center shrink-0 shadow-sm transition-transform group-hover:scale-105">
-                <span className="text-white font-bold text-2xl font-serif">V</span>
+                <img
+                src={Logo}
+                alt="Logo"
+                className="w-full h-full object-cover"
+              />
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-xl font-bold text-brand-blue leading-none tracking-tight">
@@ -81,10 +86,10 @@ const Navbar = () => {
             </nav>
 
             {/* Desktop CTA Button */}
-            <div className="hidden md:block">
+            <div className="hidden md:block bg-blue-400 ">
               <Link 
                 to="/contact" 
-                className="bg-brand-red hover:bg-red-700 text-white text-sm font-semibold px-6 py-3 rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2 transform hover:-translate-y-0.5"
+                className="bg-linear-to-r from-blue-700 to-blue-300 hover:bg-red-700 text-white text-sm font-semibold px-6 py-3 rounded transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2 transform hover:-translate-y-0.5"
               >
                 Get a Quote <ChevronRight size={16} />
               </Link>

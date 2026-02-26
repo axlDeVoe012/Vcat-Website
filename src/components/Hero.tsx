@@ -5,10 +5,10 @@ import { COMPANY_INFO } from '../data/content';
 
 const Hero = () => {
   return (
-    <section className="relative h-[500px] md:h-[600px] flex items-center bg-gray-900 overflow-hidden">
+    <section className="relative h-[125 md:h-150 flex items-center bg-gray-900 overflow-hidden">
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full bg-gradient-to-r from-gray-900 via-gray-900/70 to-gray-900/30 absolute z-10"></div>
+        <div className="w-full h-full bg-linear-to-r from-gray-900 via-gray-900/70 to-gray-900/30 absolute z-10"></div>
         <img 
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
           alt="Modern Architecture and Construction" 
@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 md:mb-6 leading-tight">
             Building the Future,<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-200">
               Managing Your Assets
             </span>
           </h1>
