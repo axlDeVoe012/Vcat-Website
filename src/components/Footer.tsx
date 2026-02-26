@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import { COMPANY_INFO } from '../data/content';
 import { Phone, Mail, MapPin } from 'lucide-react';
-
+import Logo from '../assets/logo.webp';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -12,27 +12,31 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
           
           {/* Column 1: Brand Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 text-slate-800">
             <div className="flex items-center gap-2 mb-4 md:mb-6">
               <div className="w-8 h-8 bg-brand-blue rounded flex items-center justify-center">
-                <span className="text-white font-bold text-lg">V</span>
+                <img
+                src={Logo}
+                alt="Logo"
+                className="w-full h-full object-cover"
+              />
               </div>
-              <span className="text-white font-bold text-lg tracking-tight">VCAT Properties</span>
+              <span className=" font-bold text-lg tracking-tight">VCAT Properties</span>
             </div>
             <p className="text-sm leading-relaxed mb-4 md:mb-6">
               Proudly South African. We provide quality professional management services, 
               ensuring sustainable development and compliance in health, safety, and environment.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="text-[10px] border border-gray-700 px-2 py-1 rounded text-gray-500">Reg: {COMPANY_INFO.regNo}</span>
-              <span className="text-[10px] border border-gray-700 px-2 py-1 rounded text-gray-500">B-BBEE L1</span>
+              <span className="text-[10px] border border-blue-700 px-2 py-1 rounded text-slate-800">Reg: {COMPANY_INFO.regNo}</span>
+              <span className="text-[10px] border border-blue-700 px-2 py-1 rounded text-slate-800">B-BBEE L1</span>
             </div>
           </div>
           
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-4 md:mb-6 text-sm uppercase tracking-wider">Quick Links</h4>
-            <ul className="space-y-2 md:space-y-3 text-sm">
+            <h4 className="text-gray-800 font-bold mb-4 md:mb-6 text-sm uppercase tracking-wider">Quick Links</h4>
+            <ul className="space-y-2 md:space-y-3 text-sm text-blue-400">
               <li><Link to="/" className="hover:text-brand-red transition-colors block">Home</Link></li>
               <li><Link to="/about" className="hover:text-brand-red transition-colors block">About Us</Link></li>
               <li><Link to="/services" className="hover:text-brand-red transition-colors block">Our Services</Link></li>
@@ -43,8 +47,8 @@ const Footer = () => {
 
           {/* Column 3: Services */}
           <div>
-            <h4 className="text-white font-bold mb-4 md:mb-6 text-sm uppercase tracking-wider">Services</h4>
-            <ul className="space-y-2 md:space-y-3 text-sm">
+            <h4 className="text-gray-800 font-bold mb-4 md:mb-6 text-sm uppercase tracking-wider">Services</h4>
+            <ul className="space-y-2 md:space-y-3 text-sm text-blue-400">
               <li className="hover:text-white transition-colors">Student Accommodation</li>
               <li className="hover:text-white transition-colors">Civil Construction</li>
               <li className="hover:text-white transition-colors">Property Management</li>
@@ -55,8 +59,8 @@ const Footer = () => {
 
           {/* Column 4: Contact */}
           <div>
-            <h4 className="text-white font-bold mb-4 md:mb-6 text-sm uppercase tracking-wider">Contact</h4>
-            <ul className="space-y-3 md:space-y-4 text-sm">
+            <h4 className="text-gray-800 font-bold mb-4 md:mb-6 text-sm uppercase tracking-wider">Contact</h4>
+            <ul className="space-y-3 md:space-y-4 text-sm text-blue-500">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-brand-red mt-1 shrink-0" />
                 <span>{COMPANY_INFO.address}</span>
@@ -80,7 +84,7 @@ const Footer = () => {
         
       {/* Copyright Bar */}
       <div className="border-t border-gray-800 bg-black/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-900">
           <p className="mb-2 md:mb-0">&copy; {currentYear} {COMPANY_INFO.name}. All rights reserved.</p>
           <div className="flex flex-wrap gap-3 md:gap-4 justify-center text-center">
             <span>Director: {COMPANY_INFO.director}</span>

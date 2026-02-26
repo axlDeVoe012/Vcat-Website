@@ -26,7 +26,7 @@ const Home = () => {
             {/* Feature 1: Compliance */}
             <div className="p-6 md:p-8 border border-gray-100 rounded-lg hover:shadow-xl transition duration-300 bg-white group">
               <div className="w-12 h-12 md:w-14 md:h-14 bg-blue-50 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-brand-blue transition duration-300">
-                <ShieldCheck className="text-brand-blue group-hover:text-white" size={24} />
+                <ShieldCheck className="text-brand-blue group-hover:text-blue-600" size={24} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-brand-black">Quality & Compliance</h3>
               <p className="text-gray-600">
@@ -37,7 +37,7 @@ const Home = () => {
              {/* Feature 2: Logistics */}
             <div className="p-6 md:p-8 border border-gray-100 rounded-lg hover:shadow-xl transition duration-300 bg-white group">
               <div className="w-12 h-12 md:w-14 md:h-14 bg-red-50 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-brand-red transition duration-300">
-                <Truck className="text-brand-red group-hover:text-white" size={24} />
+                <Truck className="text-brand-red group-hover:text-blue-600" size={24} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-brand-black">Logistics & Support</h3>
               <p className="text-gray-600">
@@ -48,7 +48,7 @@ const Home = () => {
              {/* Feature 3: Construction */}
             <div className="p-6 md:p-8 border border-gray-100 rounded-lg hover:shadow-xl transition duration-300 bg-white group">
               <div className="w-12 h-12 md:w-14 md:h-14 bg-blue-50 rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:bg-brand-blue transition duration-300">
-                <HardHat className="text-brand-blue group-hover:text-white" size={24} />
+                <HardHat className="text-brand-blue group-hover:text-amber-500" size={24} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-brand-black">Civil Construction</h3>
               <p className="text-gray-600">
